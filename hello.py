@@ -12,5 +12,5 @@ app = Flask(__name__)
 
 
 #Now define a function
-def hello:
+def hello():
     return "Hello World!"
