@@ -8,7 +8,7 @@ class User(DB.Model):
     name = DB.Column(DB.String(15), nullable=False)
     
     
-class tweet(DB.Model):
+class Tweet(DB.Model):
     id = DB.Column(DB.BigInteger, primary_key=True)
     text = DB.Column(DB.Unicode(300))
     user_id = DB.Column(DB.BigInteger, DB.ForeignKey('user.id'), nullable=False)
